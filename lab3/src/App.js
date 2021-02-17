@@ -1,10 +1,10 @@
-import HomePage from './components/HomePage.js';
-import ReactDom from 'react-dom';
+import React from 'react';
+import HomePage from './components/HomePage';
 
-function App() {
-  return (
-    ReactDom.render(<HomePage firstName="Katishka Walton"/>, document.getElementById('root'))
-  )
+class App extends React.Component {
+  render() {
+    return <HomePage firstName= "Katishka" />
+  }
 }
 
 export default App;
